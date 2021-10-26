@@ -79,14 +79,21 @@ public class MaquinaExpendedoraSimple {
     /**
      * Recibimos el total de dinero acumulado desde su ultimo vaciado
      */
-    public int gettotalDineroAcumulado() {
+    public int getTotalDineroAcumulado() {
         return totalDineroAcumulado;
     }
     
     /**
      * Crear metodo setter para cambiar el precio del billete 
      */
-    public void setprecioBillete(int precioDelBillete) {
+    public void setPrecioBillete(int precioDelBillete) {
         precioBillete = precioDelBillete;
+    }
+    
+    /**
+     * Reducir el precio del billete
+     */
+    public void precioBilleteRebajado(int cantidadReducir) {
+        precioBillete = precioBillete - cantidadReducir;
     }
 }
