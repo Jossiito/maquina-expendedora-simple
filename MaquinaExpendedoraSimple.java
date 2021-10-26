@@ -23,7 +23,20 @@ public class MaquinaExpendedoraSimple {
         estacionOrigen = "León";
         estacionDestino = "Málaga";
     }
-
+    
+    /**
+     * Creacion de nuevo constructor para que el precio del 
+     * billete y el destino se indiquen por parametro y el 
+     * origen sea fijo.
+     */
+    public MaquinaExpendedoraSimple(int precioDelBillete, String destino) {
+        precioBillete = precioDelBillete;
+        balanceClienteActual = 0;
+        totalDineroAcumulado = 0;
+        estacionOrigen = "León";
+        estacionDestino = destino;
+    }
+    
     /**
      * Devuelve el precio del billete
      */
